@@ -1,0 +1,6 @@
+# requirements.txt
+
+# Dépendances pour l'animation 3D
+three.js==0.137.5  # Version de Three.js, choisissez la dernière compatible avec votre projet
+
+
