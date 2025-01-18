@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu 3D</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jeu du Pendu 3D</h1>
+        <div id="hangman-container"></div>
+        <div id="word-container"></div>
+        <div id="hint-container"></div>
+        <div id="help-container">
+            <button id="help-btn">Demander de l'aide</button>
+            <p id="help-text"></p>
+        </div>
+        <div id="keyboard"></div>
+        <button id="new-game-btn">Nouvelle Partie</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
